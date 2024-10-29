@@ -1,0 +1,240 @@
+/************************************************************/
+/*************ESTILOS QUE SE USAN EN TODOS LOS HTML***********/
+/*************************************************************/
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding: 0; 
+}
+/*FUNTE QUE HEMOS OBTENIDO EN GOOGLES FONTS*/
+.lobster-regular {
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+html{
+    font-family:lobster-regular;
+}
+
+/***********************************************************/
+/********ESTILOS DEL HEADER COMÚN EN TODOS LOS HTML*********/
+/***********************************************************/
+
+
+/*DAMOS ESTILO AL TÍTULO Y SUBTÍTULO DE LAS PÁGINAS*/
+header{
+    text-align: center; 
+}  
+.rosa{
+    color:#ed5e90;
+}
+.verde{
+    color:#73b431;
+}
+header h1{
+        
+    font-weight: 800;
+    font-size: 70px;
+    padding: 3%;          
+}
+header h2{
+    padding-bottom: 3%;
+}
+
+/*DAMOS ESTILO A LA BARRA DE NAVEGACIÓN*/ 
+nav{
+    display: flex;
+    justify-content: space-around;
+    height: 40px;
+}
+.elemento{
+    padding: 14px;
+}
+.div_barra{
+    text-align: center;
+    text-decoration:none;
+    color:black;
+}
+.div_barra2{
+    color:#73b431;
+}
+header a{
+    text-decoration:none;
+    font-weight: bold;   
+}
+header a:hover{
+    background-color:#f0e2da;
+    padding: 7px;
+    border-radius: 8px;
+    transition: background-color 0.5s;
+}
+
+/************************************************************/
+/***************ESTILOS DEL MAIN DEL INDEX*******************/
+/************************************************************/
+.mainindex{
+    display: flex;
+    justify-content: space-around;
+    color: black; 
+}
+/*Aquí le damos estilo al aside que hay a la izquierda que anuncia la gama de productos sin gluten*/
+aside{
+    flex:25%; 
+    text-align: center;
+    background-color:#f0e2da;
+    padding: 2%;
+    border-radius: 100px;
+    margin-left: 3%;
+    color: black;
+    margin-bottom: 10%;
+    margin-top: 3%;
+    }
+a{
+    color:black;
+    font-weight: bold;
+    text-decoration: none;
+    }
+/*Damos estilo al texto central del index, primero de forma general y luego dando estilos específicos al título y al texto*/
+.texto{
+    flex:55%;
+    padding: 3%;
+    text-align: center;
+}
+.texto h1{
+    padding-bottom: 4%;
+}
+.texto p{
+    font-weight:400;
+    letter-spacing: 0.1rem;
+    line-height: 25px;
+    font-size:large;
+    padding: 4%;
+}
+.imagen_lateral{
+    flex:20%;
+    padding-right: 2%; 
+}
+
+/******************************************************************************/
+/******************DAMOS ESTILO AL MAIN DE PRODUCTOS.HTML***********************/
+/******************************************************************************/
+/*Hacemos una rejilla para colocar cada una de las imágenes de los productos de la empresa*/
+.mainproductos{
+    display: grid;
+    grid-template-columns: 250px 250px 250px;
+    grid-template-rows: 200px 200px;
+    grid-gap:50px;
+    margin-left:22%;
+    margin-right:22%;
+}
+/*Le damos estilo a las imágenes y al texto de abajo, y con el último estilo hacemos que si se
+posiciona el ratón sobre la imagen, esta se desplace 5px hacia arriba*/
+.mainporductos img{
+    border-radius: 5px;
+}
+.mainproductos p{
+    text-align: center;
+    text-decoration: wavy;
+} 
+.mainproductos div:hover{
+    transform: translateY(-5px);
+}
+/******************************************************************************/
+/******************DAMOS ESTILO AL MAIN DE CONTACTO.HTML***********************/
+/******************************************************************************/
+.maincontacto{
+    margin-left: 30%;
+    margin-right: 30%;    
+    padding: 3%;
+}
+/******************************************************************************/
+/******************DAMOS ESTILO AL MAIN DE PRESUPUESTO.HTML*********************/
+/******************************************************************************/
+.mainpresupuesto{
+    width: 60%;
+    max-width: 1200px;
+    padding: 5%;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 5%;
+    background-color:#f0e2da;
+    border-radius: 100px;
+}
+/*Aquí le damos estilos a los elementos de la lista que componen nuestro formulario, exceptuando 
+la política de privacidad y el botón, que los he colocado fuera de la lista*/
+ul{
+    
+    max-width: 800px;
+    margin: 0 auto;
+}
+li{
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+}
+label{
+    padding: 8px;
+    font-weight: 300;
+    letter-spacing: 0.09em;
+}
+li > label{
+    flex: 1 0 120px;
+    max-width: 220px;
+}
+textarea{
+    width: 50%;
+}
+/*Este es el estilo correspondiente a la política de privacidad, que lo que hace es
+separarlo del resto del formulario*/
+.politica_privacidad{
+    padding-top: 5%;
+}
+/*Aquí tenemos el estilo del botón enviar*/
+.enviar{
+    font-family:lobster-regular;
+    padding-top: 5% ;
+}
+/*Con este estilo le decimos que si se introducen valores no válidos, el texto salga en rojo*/
+input:invalid{
+    color:red;
+}
+/*******************************************************************
+****************DAMOS ESTILO AL FOOTER DEL INDEX********************
+*********************************************************************/
+/*En el footer del index tenemos tres partes: el enlace a redes sociales, la dirección
+y el enlace al aviso legal*/
+footer{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    height: 100px;
+    padding-top: 3%;
+    padding-bottom: 5%;
+   }
+.redes_sociales{
+    flex:33%;
+}
+footer img{
+    margin: 3px;
+}
+.direccion{
+    color: black;
+    text-decoration: none;
+    flex:33%;
+
+}
+.aviso_legal{
+    flex:33%;
+}
+
+.enlaceAL h1{
+    padding: 8px;
+    text-align: center;
+}
+.enlaceAL{
+    font-weight:400;
+    letter-spacing: 0.1rem;
+    line-height: 25px;
+    font-size:large;
+    padding: 4%;
+}

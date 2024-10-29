@@ -1,0 +1,74 @@
+<!--Esta es la página principal de la web-->
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <!--Aquí ponemos el nombre que queremos que se vea en la pestaña del buscador-->
+        <title>SWEETS & GREENS</title>
+        <meta name="description" content="dulces elaborados con productos ecologicos">
+        <!--Con el link de abajo hacemos que el logo de nuestra marca aparezca en la pestaña del buscador-->
+        <link rel="icon" href="assets/imagenes/logo.jpeg">
+        <!--Enlazamos con nuestra hoja de estilos, común a todos los html-->
+        <link rel="stylesheet" href="css/estilos.css">
+        <!--Cargamos la fuente que usaremos haciendo uso de las líneas de texto que nos proporciona Google Fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <!--Con el nav de abajo creamos el menú de navegación que estará en la parte superior de todas las páginas de la web.
+            Obsérvese que cada <div> del <nav> tiene una clase, que será div_barra en todos los casos menos en el
+            del html que nos encontremos que será div_barra2(en este caso INICIO que hace referencia a la página asociada al index.html), 
+            así podemos resaltar la página donde nos encontremos-->
+            <nav>
+                <div class="elemento"> <a href="./index.html" class="div_barra2">INCIO</a></div>
+                <div class="elemento"> <a href="./views/productos.html" class="div_barra">PRODUCTOS</a></div>
+                <div class="elemento"> <a href="./views/contacto.html" class="div_barra">CONTACTO</a></div>
+                <div class="elemento"> <a href="./views/presupuesto.html" class="div_barra">PRESUPUESTOS PARA EVENTOS</a></div>
+            </nav>  
+            <!--Aquí ponemo el título de la web con el logo al lado-->
+            <h1> 
+                <img src="assets/imagenes/logo.jpeg" alt="logotipo" width="60" height="60">
+                <span class="rosa">Sweet</span> & <span class="verde">Greens</span>
+            </h1>     
+            <h2>La naturaleza, horneada a la perfección</h2>
+        </header>
+            <!--Aquí empieza el main, en el que hay tres partes: un aside para un texto lateral, y dos div: uno para el texto principal y 
+            otro para una imagen lateral. Para poder darle estilos diferenciados a cada main de las diferentes páginas en el mismo .css, les 
+            hemos puesto un class con un nombre diferente en cada .html-->
+        <main class="mainindex">
+            <aside>
+                <h2>Descubre la bollería ecológica <span class=verde>sin gluten</span> que cuida de ti</h2>
+                <img src="assets/imagenes/sin_gluten_index.jpg" alt="sin gluten" width="100" height="100">
+                <p>Imagina disfrutar de un delicioso bizcocho, una crujiente galleta o un esponjoso muffin sin preocuparte por el gluten. Nuestra nueva gama de bollería ecológica, elaborada con ingredientes naturales y sin gluten, te permite cuidar de tu salud sin renunciar al sabor. ¡Perfecta para celíacos, intolerantes al gluten y para todos aquellos que buscan una alimentación más saludable!</p>
+                <p>Consulta <a href="./views/productos.html">nuestro catálogo</a>.</p>
+            </aside>
+            <div class="texto">
+                <h1>SEMBRANDO SABORES DESDE 1989</h1>
+                <p>Sweets & Greens nace de la pasión por la repostería de Enya, quien desde pequeña disfrutaba preparando dulces caseros para su familia y amigos. Con el tiempo, esta afición se convirtió en una verdadera vocación, y decidió compartir su amor por la bollería con el mundo. <br>Tras años de investigación y experimentación, Enya desarrolló un proceso de elaboración artesanal que combina las mejores tradiciones de la repostería con los principios de la agricultura ecológica. Nuestro objetivo es ofrecer productos deliciosos y saludables, elaborados con ingredientes de primera calidad y sin comprometer el sabor.<br>
+                En Sweets & Greens, creemos que la alimentación es mucho más que un acto nutricional, es una experiencia sensorial y emocional. Por eso, ponemos todo nuestro corazón en cada bollo que elaboramos.</p>
+            </div>
+            <div class="imagen_lateral">
+                <img src="assets/imagenes/lateral.jpg" alt="lateral" width="372" height="570">
+            </div>
+        </main>
+        <!--Aquí tenemos el footer con tres div diferenciados (para redes sociales, para la dirección y para el viso legal).
+        Decir que los tres son enlaces que nos direccionan los sitios webs o html correspondientes.-->
+        <footer>
+            <div class="redes_sociales">
+                <a href="https://www.facebook.com/"><img src="assets/imagenes/facebook.png" alt="facebook" width="30" height="30"></a>
+                <a href="https://www.youtube.com/"><img src="assets/imagenes/youtube.jpg" alt="youtube" width="30" height="30"></a>
+                <a href="https://www.instagram.com/"><img src="assets/imagenes/instagram.png" alt="instagram" width="30" height="30"></a> 
+            </div>
+            <div class="direccion">
+                <a href="https://g.co/kgs/MUBWLH2">c/Virgen del Socorro, 123,<br> 12345, Alicante</a>
+            </div>
+            <div class="aviso_legal">
+                <a href="./views/avisoLegal.html">Aviso legal</a>
+            </div>
+        </footer>
+    </body>
+</html>
+

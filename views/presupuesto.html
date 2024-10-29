@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>PRESUPUESTO-S&G</title>
+    <meta name="description" content="dulces elaborados con productos ecologicos">
+    <link rel="icon" href="../assets/imagenes/logo.jpeg">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>  
+        <nav>
+           <div class="elemento"> <a href="../index.html" class="div_barra">INICIO</a></div>
+           <div class="elemento"> <a href="./productos.html" class="div_barra">PRODUCTOS</a></div>
+           <div class="elemento"> <a href="./contacto.html" class="div_barra">CONTACTO</a></div>
+           <div class="elemento"> <a href="./presupuesto.html" class="div_barra2">PRESUPUESTOS PARA EVENTOS</a></div>
+        </nav>  
+       
+        <h1> 
+            <img src="../assets/imagenes/logo.jpeg" alt="logotipo" width="60" height="60">
+            <span class="rosa">Sweet</span> & <span class="verde">Greens</span>
+        </h1>     
+        <h2>PRESUPUESTO PARA EVENTOS</h2>
+    </header>
+    <!--Aquí hemos creado un formulario en el que el usuario puede introducir los datos
+    necesarios para que se le haga un presupuesto. Los hemos creado en forma de lista exceptuando el checkbox 
+    y el botón de enviar-->
+    <main class="mainpresupuesto">
+        <form id="myForm" name="myForm" action="submit" method="get" target="_self">
+            <ul class="flex-otler">
+                <li>
+                    <label for="first-name">Nombre</label>
+                    <input type="text" id="first-name" name="first-name" placeholder="Escriba su nombre" pattern="[A-Za-zÁÉÍÓÚÜáéíóúñ .]+" required>
+                </li>
+                <li>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Escriba su email" pattern="[A-Za-z0-9_-.]+@[a-z0-9._-]+\.[a-z]" required>
+                </li>
+                <li>
+                    <label for="telephone">Teléfono</label>
+                    <input type="tel" id="telephone" name="telephone" placeholder="Escriba su teléfono" pattern="[0-9]{9}"  required>
+                </li>
+                <li>
+                    <label for="information">Solicite más información</label>
+                    <textarea rows="10" id="information" placeholder="Describa lo que crea que necesitamos saber para darle un presupuesto" required></textarea>
+                </li>   
+            </ul>   
+            <div class="politica_privacidad">    
+                <input type="checkbox" id="privacidad" name="privacidad" value="privacidad" required>
+                <label for="privacidad">Acepto la <a href="#">política de privacidad</a> de Sweets & Greens S.L. </label>
+            </div>
+            <div class="enviar">
+                <input type="submit" value="Enviar">
+            </div>
+        </form>
+    </main>
+</body>
+</html>
